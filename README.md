@@ -2,7 +2,7 @@
    **Caesar Cipher in Javascript**
 
 ## Live Link
-   Will be shared once the frontend is built and app is hosted.
+   The App is live at https://b-otunga.github.io/Caesar-cipher-JavaScript/.
 
 ## Project Description
 This project implements the Caesar Cipher using JavaScript.  
@@ -20,7 +20,7 @@ Using a key, which is an integer between 1 and 25, This cipher rotates the lette
    
 ## Technologies Used
 1. VS Code
-3. This a WIP and more technologies will be added as we go. 
+3. This is a WIP and more technologies will be added as we go. 
 
 ## Lincence and Copyright Information
    (c) 2023 Bill Otunga
