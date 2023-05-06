@@ -15,7 +15,7 @@ background: rgb(204, 196, 196);
 
 .homeContainer{
     background-color: rgba(0, 0, 0, 0.8);
-   min-height: 38em;
+   min-height: 35em;
    max-height: fit-content;
     width: 60%;
     margin: auto;
@@ -24,8 +24,6 @@ background: rgb(204, 196, 196);
     color: rgb(254, 254, 254);
     text-align: center;
     position: relative;
-
- 
 }
 
 .pageIntro{
