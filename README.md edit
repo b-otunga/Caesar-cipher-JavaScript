@@ -1,8 +1,11 @@
 ## Project Name
-   **Caesar Cipher**
+   **Caesar Cipher in Javascript**
+
+## Live Link
+   Will be shared once the frontend is built and app is hosted.
 
 ## Project Description
-This project implements the Caesar Cipher using Java.  
+This project implements the Caesar Cipher using JavaScript.  
    
  
 ## Author Information
@@ -10,20 +13,14 @@ This project implements the Caesar Cipher using Java.
    * billotungah@gmail.com
 
 ## Setup Instructions
-* Clone the Repository in your IDE (git clone https://github.com/b-otunga/Caesar-cipher-Java.git)
-* Install all dependencies, and you should be good to go.
+Click on the livelink to test the app.
 
 ## BDD
 Using a key, which is an integer between 1 and 25, This cipher rotates the letters of the alphabet (A to Z). The encoding replaces each letter with the 1st to 25th next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC".
    
 ## Technologies Used
-1. Intellij IDEA
-2. Gradle
+1. VS Code
 3. This a WIP and more technologies will be added as we go. 
-
-
-## Live Link
-   Will be shared once the frontend is built and app is hosted.
 
 ## Lincence and Copyright Information
    (c) 2023 Bill Otunga
