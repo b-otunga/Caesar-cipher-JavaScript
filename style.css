@@ -1,0 +1,60 @@
+body{
+/* background: url("https://cdn.pixabay.com/photo/2016/12/28/11/36/book-1935944_1280.jpg"); */
+background: rgb(204, 196, 196);
+ 
+}
+
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+  }
+
+.homeContainer{
+    background-color: rgba(0, 0, 0, 0.8);
+   min-height: 38em;
+   max-height: fit-content;
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 6%;
+    color: rgb(254, 254, 254);
+    text-align: center;
+    position: relative;
+
+ 
+}
+
+.pageIntro{
+    width: 40%;
+    margin: auto;
+}
+
+#select, #encryptMessageBox, #keyBox{
+    color: aqua;
+    margin:auto;
+    margin-top: 2%;
+}
+#messageBox{
+    margin-top: 2%;
+}
+
+#DecryptButton{
+    display: none;
+    margin: auto;
+}
+
+#EncryptButton{
+margin: auto;
+}
+
+#outputBox{
+    min-height: 1em;
+    max-height: fit-content;
+    width: 50%;
+    margin: auto;
+    margin-top: 1%;
+}
