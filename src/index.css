@@ -59,11 +59,14 @@ margin: auto;
 }
 
 #outputBox{
+  align-items: center;
   min-height: 1em;
   max-height: fit-content;
   width: 50%;
   margin: auto;
   margin-top: 1%;
+  text-align:center;
+  overflow-x: auto;
 }
 
 #form-select, #key, #messageBox{
@@ -72,5 +75,6 @@ margin: auto;
 }
 
 #outputResult{
-  margin: 0;
+  margin: auto;
+  overflow-wrap: break-word;
 }

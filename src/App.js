@@ -153,6 +153,7 @@ const determineWhetherToAddOrSubtract = () => {
              <div id="outputBox">
      <h5>Result</h5>
   <strong><p id="outputResult">Your result will appear here</p> </strong>
+  <br />
  </div>
              
  
