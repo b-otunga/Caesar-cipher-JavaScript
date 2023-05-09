@@ -16,9 +16,6 @@ let charFromMessage;
 const determineWhetherToAddOrSubtract = () => {
   if (operation == "Encrypt"){
       newIndex = originalIndex + key
-      console.log("newi" +newIndex)
-      console.log("origi" + originalIndex)
-      console.log("key" + key)
       if (newIndex > 25){
           newIndex -= 26
       }
@@ -30,11 +27,10 @@ const determineWhetherToAddOrSubtract = () => {
   }}
 
   const encodeOrDecode = ()=> {
-//     operation = document.getElementById("form-select").value;
-//  message = document.getElementById("messageBox").value;
+    
  let newMessage = ""
  
- if (operation== "Click here to select" || parseInt(key) == NaN || message == ""){
+ if (operation== "Click here to select" || !key || message == ""){
      alert("Please fill all fields")
  return;
  }
@@ -64,22 +60,17 @@ const determineWhetherToAddOrSubtract = () => {
  
      }
      document.getElementById("outputResult").innerHTML = newMessage;
-     console.log(message)
-     console.log(newMessage)
      
  }
 
   const handleKeyChange = (event) => {
-    const key = event.target.value;
-    setKey(event.target.value);
-    console.log(key)
+    let key = parseInt(event.target.value);
+    setKey(parseInt(key));
   }
 
   const handleMessageChange = (event) => {
     const message = event.target.value;
     setMessage(message);
-    
-  console.log(message)
   }
 
   const getOperation = (event) => {
@@ -95,14 +86,13 @@ const determineWhetherToAddOrSubtract = () => {
       document.getElementById("EncryptButton").style.display = "block";
       
   }
-  console.log(operation)
 
   }
 
   return (
     <div className="App">
    <div id = "homeContainer" >
-   <h3 id="Caesar">Caesar Cipher App</h3>
+   <h4 id="Caesar">Caesar Cipher App</h4>
    <div className="pageIntro">
  
              <h6>Hi, we help you encrypt your messages so no one can understand them, we will also decript them for you. Choose your aim below</h6>
@@ -162,7 +152,7 @@ const determineWhetherToAddOrSubtract = () => {
 
              <div id="outputBox">
      <h5>Result</h5>
-  <strong><p id="outputResult">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus maximus lectus sit amet justo rutrum, id hendrerit libero sollicitudin. Proin at orci quis augue malesuada iaculis. Vivamus rutrum consequat ligula vitae vestibulum. Aenean imperdiet turpis at dolor malesuada, ac pellentesque sapien eleifend. Donec sit amet odio eu enim congue hendrerit in et odio. Nam dapibus sapien vel nisi facilisis, eu rhoncus lacus gravida. Proin sagittis massa quis dui bibendum suscipit. Sed bibendum turpis eget ante tristique lobortis. Donec lobortis, erat quis auctor lobortis, ex lectus ultrices arcu, in bibendum ipsum metus ut tortor.</p> </strong>
+  <strong><p id="outputResult">Your result will appear here</p> </strong>
  </div>
              
  

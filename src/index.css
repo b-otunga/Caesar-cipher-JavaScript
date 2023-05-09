@@ -70,3 +70,7 @@ margin: auto;
   height: 10%;
   font-size: 95%;
 }
+
+#outputResult{
+  margin: 0;
+}
