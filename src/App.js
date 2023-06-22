@@ -59,7 +59,7 @@ const determineWhetherToAddOrSubtract = () => {
  }
  
      }
-     document.getElementById("outputResult").innerHTML = newMessage;
+     document.getElementById("outputp").innerHTML = newMessage;
      
  }
 
@@ -92,22 +92,23 @@ const determineWhetherToAddOrSubtract = () => {
   return (
     <div className="App">
    <div id = "homeContainer" >
-   <h4 id="Caesar">Caesar Cipher App</h4>
+   
    <div className="pageIntro">
- 
-             <h6>Hi, we help you encrypt your messages so no one can understand them, we will also decript them for you. Choose your aim below</h6>
+   <h4 >Caesar Cipher App</h4>
+             <h6>Hi, we help you encrypt your messages so that no one can understand them, we will also decript them for you. Select your operation below</h6>
              </div>
-             <div className="select w-50" id="select">
-     <label htmlFor="form-select" className="form-label" >I want to...</label>
-             <select className="form-select" id="form-select" aria-label="Default select example" onChange={getOperation}>
+      <div id="page">
+      <div className="inputs">
+             
+     <div id="operation" ><label htmlFor="form-select" className="form-label" >I want to...</label>
+             <select className="form-select" aria-label="Default select example" onChange={getOperation}>
                  <option defaultValue>Click here to select</option>
                  <option value="Encrypt">Encrypt my message</option>
                  <option value="Decrypt">Decrypt a message</option>
                </select>
-
-               <div className="key" id="keyBox"  >
-                <label htmlFor="form-select" className="form-label" >Pick your encryption key</label>
-                        <select className="form-select" id="key" aria-label="Default select example" onChange={handleKeyChange}>
+               </div>
+                <div id="key"><label htmlFor="form-select" className="form-label" >Pick your encryption key</label>
+                        <select className="form-select"  aria-label="Default select example" onChange={handleKeyChange}>
                             <option defaultValue>Click to pick a Key</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -137,29 +138,33 @@ const determineWhetherToAddOrSubtract = () => {
                     
                           </select>
                           
-                        </div>
+                          </div>
                
-               
-             </div>
-             <div className="encryptMessageBox  w-50" id="encryptMessageBox">
+                        <div id="encryptMessageBox">
      <div className="mb-3">
          <label htmlFor="messageBox" className="form-label">Enter your message below</label>
-         <textarea className="form-control" id="messageBox" rows="2" placeholder="Type or paste your text here" onChange={handleMessageChange}></textarea>
+         <textarea className="form-control" id="messageBox" rows="4" placeholder="Type or paste your text here" onChange={handleMessageChange}></textarea>
        </div>
        <button type="submit" className="btn btn-primary" id="EncryptButton" onClick={encodeOrDecode}>Encrypt</button>
        <button type="submit" className="btn btn-primary" id="DecryptButton" onClick={encodeOrDecode}>Decrypt</button>
- </div>
-
-             <div id="outputBox">
+ </div>  
+        
+            
+            </div>
+            <div id="outputBox">
      <h5>Result</h5>
-  <strong><p id="outputResult">Your result will appear here</p> </strong>
-  <br />
- </div>
-             
- 
+     <div id="outputResult">
 
-   </div>
-    </div>
+  <strong><p id='outputp'>Your result will appear here</p></strong>
+  </div>
+  
+ </div>
+      </div>
+
+      </div>
+
+   </div> 
+  
   );
 }
 

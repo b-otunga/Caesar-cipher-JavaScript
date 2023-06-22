@@ -1,16 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 #bgVideo {
   position: fixed;
@@ -21,13 +8,27 @@ code {
   z-index: -100;
 }
 
-#homeContainer{
-  background-color: rgba(0, 0, 0, 0.72);
-min-height: 33em;
-  width: 60%;
+#page{
+  width: 85%;
+  height: 55vh;
+  /* background-color: blue; */
   margin: auto;
-  margin-top: 2%;
-  border-radius: 5%;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2%
+
+}
+
+#homeContainer{
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(0, 0, 0, 0.72);
+min-height: 33vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 2.5%;
+  border-radius: 15px;
   color: rgb(254, 254, 254);
   text-align: center;
   position: relative;
@@ -36,45 +37,62 @@ min-height: 33em;
 .pageIntro{
   width: 52%;
   margin: auto;
-  font-size: 60%;
+  font-size: 40%;
+  margin-top: 1%;
 }
 
-#select, #encryptMessageBox, #keyBox{
-  color: aqua;
+.inputs{
+  display: flex;
+  flex-flow: column;
+  
+}
+#encryptMessageBox, #key, #operation{
+  color: #5497f0;
   margin:auto;
+  width: 95%;
   margin-top: 2%;
 }
+
 #messageBox{
-  margin-top: 2%;
   font-size: 95%;
 }
 
 #DecryptButton{
   display: none;
   margin: auto;
+  height: 18%;
+  font-size: small;
+  align-items: center;
 }
 
 #EncryptButton{
 margin: auto;
+height: 18%;
+font-size: small;
+align-items: center;
 }
 
 #outputBox{
+  position: relative;
   align-items: center;
-  min-height: 1em;
-  max-height: fit-content;
-  width: 50%;
-  margin: auto;
-  margin-top: 1%;
-  text-align:center;
-  overflow-x: auto;
+  height: 100%;
+  padding: 1%;
+
 }
 
-#form-select, #key, #messageBox{
-  height: 10%;
-  font-size: 95%;
+#outputResult::-webkit-scrollbar {
+  width: 10% !important;
 }
 
 #outputResult{
+  width: 100%;
+  position: absolute;
   margin: auto;
   overflow-wrap: break-word;
+  text-align: justify;
+  background: rgba(11, 10, 11, 0.5);
+  height: 80%;
+  border-radius: 10px;
+  padding: 4%;
+  overflow-y:scroll;
 }
