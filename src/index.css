@@ -81,7 +81,7 @@ align-items: center;
 }
 
 #outputResult::-webkit-scrollbar {
-  width: 10% !important;
+  width: 2% !important;
 }
 
 #outputResult{
