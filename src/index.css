@@ -11,7 +11,6 @@
 #page{
   width: 85%;
   height: 55vh;
-  /* background-color: blue; */
   margin: auto;
   margin-bottom: 10vh;
   display: grid;
@@ -95,4 +94,23 @@ align-items: center;
   border-radius: 10px;
   padding: 4%;
   overflow-y:scroll;
+}
+
+@media screen and (max-width: 700px) {
+  #homeContainer{
+    min-height: fit-content;
+  }
+  
+  #page {
+    display: flex;
+    min-height: 100vh;
+    max-height: fit-content;
+    flex-flow: column;
+    
+  }
+  
+  #outputResult{
+    min-height: 90%;
+    overflow-y: visible;
+  } 
 }
