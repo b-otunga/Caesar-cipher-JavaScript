@@ -160,7 +160,7 @@ const determineWhetherToAddOrSubtract = () => {
   
  </div>
       </div>
-
+<p id='copyright'>© Copyright: Bill Otunga - {new Date().getFullYear()}</p>
       </div>
 
    </div> 
